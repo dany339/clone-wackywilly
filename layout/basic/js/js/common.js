@@ -40,3 +40,20 @@ var pagingSwiper = new Swiper(".topBannerSlider", {
 
 mainSwiper.controller.control = pagingSwiper;
 pagingSwiper.controller.control = mainSwiper;
+
+function toggleSideDep1(event) {
+  var thisBtn = event.target;
+  var thisRect = thisBtn.closest(".dep1.dropdown");
+
+  var rextCnt = document.querySelectorAll("#prdSideMenu .dep1.dropdown").length;
+  for (var i = 0; i < rectCnt; i++) {
+    var rect = document.querySelectorAll("#prdSideMenu .dep1.dropdown")[i];
+    if (rect != thisRect) rect.classList.remove("open");
+  }
+
+  if (thisRect.className.indexOf("open") == -1) {
+    thisRect.classList.add("open");
+  } else {
+    thisRect.classList.remove("open");
+  }
+}
