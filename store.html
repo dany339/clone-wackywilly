@@ -65,6 +65,10 @@
       defer
     ></script>
     <title>와키윌리 공식 웹사이트</title>
+    <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=f182sb6hh2"
+    ></script>
   </head>
   <body
     id="main"
@@ -119,7 +123,7 @@
           <div class="gnbWrap">
             <ul>
               <li class="dep1 dropdown" data-category="shop">
-                <a href="" class="dep1_btn">스토어</a>
+                <a href="./productList.html" class="dep1_btn">스토어</a>
               </li>
               <li class="dep1 dropdown" data-category="lookbooks">
                 <a href="" class="dep1_btn">룩북</a>
@@ -148,7 +152,7 @@
               </li>
               <li class="dep1 dropdown">
                 <a
-                  href=""
+                  href="./summer.html"
                   class="dep1_btn"
                   style="font-size: 13px; font-weight: bold"
                   >🎁 SUMMER OUTLET(~60%)</a
@@ -156,12 +160,12 @@
               </li>
             </ul>
           </div>
-          <a href="/" class="logo">
+          <a href="./index.html" class="logo">
             <img src="./images/new_logo_6.png" alt="wacky willy" />
           </a>
           <div class="rightWrap">
             <ul>
-              <li><a href="">매장안내</a></li>
+              <li><a href="./store.html">매장안내</a></li>
               <li><a href="">MEMBERSHIP</a></li>
               <li><a href="" onclick="callSearchWrap();">검색</a></li>
               <li
@@ -214,7 +218,30 @@
                   overflow: hidden;
                   background: rgb(248, 249, 250);
                 "
-              ></div>
+              >
+                <div id="map" style="width: 100%; height: 400px"></div>
+                <script>
+                  var mapOptions = {
+                    center: new naver.maps.LatLng(37.3595704, 127.105399),
+
+                    zoom: 10,
+                  };
+
+                  var map = new naver.maps.Map("map", mapOptions);
+
+                  var map = new naver.maps.Map("map", {
+                    center: new naver.maps.LatLng(37.3595704, 127.105399),
+
+                    zoom: 15,
+                  });
+
+                  var marker = new naver.maps.Marker({
+                    position: new naver.maps.LatLng(37.3595704, 127.105399),
+
+                    map: map,
+                  });
+                </script>
+              </div>
               <div id="addrPup"></div>
             </div>
           </div>
