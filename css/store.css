@@ -1,0 +1,39 @@
+@charset 'utf-8';
+.store-wrap {
+  margin-bottom: 6rem;
+}
+.store-wrap .map-container {
+  width: 100%;
+}
+.store-wrap .map-container {
+  height: 490px;
+}
+.store-wrap .store-map {
+  position: relative;
+}
+.m-info-box {
+  z-index: 1;
+  border-bottom: 1px solid #e7e7e7;
+  position: relative;
+  width: 100%;
+}
+.m-info-box .scroll-wrapper {
+  padding-right: 0;
+  position: static; /* 기본값, 정적좌표를 의미 */
+}
+.m-info-box .a-icon-close {
+  right: 0;
+  top: 0;
+  position: absolute;
+  cursor: pointer;
+  font-size: 15px;
+}
+#appPup .content {
+  vertical-align: top;
+  display: inline-block;
+  padding: 28px 0 25px;
+}
+#addPup .opening-hours,
+#addPup .exeption-hours {
+  margin-top: 17px;
+}

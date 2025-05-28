@@ -31,16 +31,16 @@
       content="rz7lumr2yg7fw8u7bnoyw0v8z0y200"
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
     <!-- PG크로스브라우징필수내용 -->
     <meta http-equiv="Cache-Control" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <meta http-equiv="Pragma" content="no-cache" />
     <!-- // PG크로스브라우징필수내용 -->
     <!-- 구글 웹폰트 include :: s -->
-    <!-- <link rel="preconnect" href="./font/font1.css" />
-    <link rel="preconnect" href="./font/font2.css" />
-    <link rel="preconnect" href="./font/font3.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -48,6 +48,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/store.css" />
     <!-- 구글 웹폰트 include :: e -->
     <!-- 리뉴얼용 CSS, JS 추가 include :: s -->
     <script
@@ -67,7 +68,7 @@
     <title>와키윌리 공식 웹사이트</title>
     <script
       type="text/javascript"
-      src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=f182sb6hh2"
+      src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=f182sb6hh2"
     ></script>
   </head>
   <body
@@ -219,15 +220,22 @@
                   background: rgb(248, 249, 250);
                 "
               >
-                <div id="map" style="width: 100%; height: 400px"></div>
+                <div
+                  id="map"
+                  class="map-container"
+                  tabindex="0"
+                  style="
+                    position: relative;
+                    overflow: hidden;
+                    background: rgb(248, 249, 250);
+                  "
+                ></div>
                 <script>
                   var mapOptions = {
                     center: new naver.maps.LatLng(37.3595704, 127.105399),
 
                     zoom: 10,
                   };
-
-                  var map = new naver.maps.Map("map", mapOptions);
 
                   var map = new naver.maps.Map("map", {
                     center: new naver.maps.LatLng(37.3595704, 127.105399),
