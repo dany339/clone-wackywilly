@@ -48,6 +48,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/productList.css" />
     <!-- 구글 웹폰트 include :: e -->
     <!-- 리뉴얼용 CSS, JS 추가 include :: s -->
     <script
@@ -121,7 +122,7 @@
               <li class="dep1 dropdown" data-category="shop">
                 <a href="./productList.html" class="dep1_btn">스토어</a>
               </li>
-              <li class="dep1 dropdown" data-category="lookbooks">
+              <li class="dep1 dropdown" data-category="lookbook">
                 <a href="" class="dep1_btn">룩북</a>
               </li>
               <li class="dep1 dropdown" data-category="magazine">
@@ -238,15 +239,21 @@
                     </li>
                     <li class="dep1 dropdown">
                       <a
-                        href=""
+                        href="javascript:"
                         class="dep1_btn active"
                         onclick="toggleSideDep1(event);"
                         >모자</a
                       >
                       <ul class="dep1_sub">
-                        <li class="dep2"><a href="">전체</a></li>
-                        <li class="dep2"><a href="">볼캡</a></li>
-                        <li class="dep2"><a href="">버킷햇</a></li>
+                        <li class="dep2">
+                          <a class="dep2_btn active" href="">전체</a>
+                        </li>
+                        <li class="dep2">
+                          <a class="dep2_btn" href="">볼캡</a>
+                        </li>
+                        <li class="dep2">
+                          <a class="dep2_btn" href="">버킷햇</a>
+                        </li>
                       </ul>
                     </li>
                   </ul>
@@ -258,7 +265,7 @@
               >
                 <div class="xans-element- xans-product xans-product-normalmenu">
                   <div class="function prdListTop" id="Product_ListMenu">
-                    <p class="prdCount">등록 제품<strong>4</strong>개</p>
+                    <p class="prdCount">등록 제품 : <strong>4</strong>개</p>
                     <div class="sort sortList">
                       <select
                         name="selArray"
@@ -283,12 +290,6 @@
                         <div class="prdImg">
                           <a href="" name="anchorBoxName_11519">
                             <span class="img off">
-                              <img
-                                src="./images/web/product/cap1.jpg"
-                                alt="25SS 베이직 볼캡 (10 colors)"
-                              />
-                            </span>
-                            <span class="img on twinEle">
                               <img
                                 src="./images/web/product/cap1.jpg"
                                 alt="25SS 베이직 볼캡 (10 colors)"
@@ -332,12 +333,6 @@
                                 alt="소프트 트러커 캡 (3 colors)"
                               />
                             </span>
-                            <span class="img on twinEle">
-                              <img
-                                src="./images/web/product/cap2.jpg"
-                                alt="소프트 트러커 캡 (3 colors)"
-                              />
-                            </span>
                             <p class="idx">2</p>
                           </a>
                         </div>
@@ -376,12 +371,6 @@
                                 alt="베이직 버킷햇 (3 colors)"
                               />
                             </span>
-                            <span class="img on twinEle">
-                              <img
-                                src="./images/web/product/cap3.jpg"
-                                alt="베이직 버킷햇 (3 colors)"
-                              />
-                            </span>
                             <p class="idx">3</p>
                           </a>
                         </div>
@@ -415,12 +404,6 @@
                         <div class="prdImg">
                           <a href="" name="anchorBoxName_11395">
                             <span class="img off">
-                              <img
-                                src="./images/web/product/cap4.jpg"
-                                alt="야자수 패널캡 (2 colors)"
-                              />
-                            </span>
-                            <span class="img on twinEle">
                               <img
                                 src="./images/web/product/cap4.jpg"
                                 alt="야자수 패널캡 (2 colors)"

@@ -1,0 +1,269 @@
+@charset 'utf-8';
+
+.ed-contents-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.ed-image {
+  margin-bottom: 5rem;
+}
+.ed-contents-wrap img {
+  width: 100%;
+}
+.menuCategoryWrap {
+  position: sticky;
+  top: 82px;
+  background-color: #fff;
+  z-index: 1;
+  width: calc(100% - 1px);
+  border: 1px solid #e7e7e7;
+  border-left: 0;
+}
+.menuCategory {
+  max-width: 1830px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+  padding: 25px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.menuCategory a {
+  text-decoration: none;
+  transition: 0.3s all ease;
+  font-weight: 600;
+  font-size: 13px;
+}
+.menuCategory li.active a {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10rem;
+}
+html body .prdListWrap .sideMenu .menuCategory .dep1 {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+html body .prdListWrap .sideMenu .menuCategory .dep1_btn {
+  font-size: 13px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #111;
+}
+
+html body .prdListWrap .sideMenu .menuCategory .dep1_btn.active {
+  color: #000;
+}
+
+html body .prdListWrap .sideMenu .menuCategory .dep1_sub {
+  display: none;
+  padding: 5px 0;
+}
+
+html body .prdListWrap .sideMenu .menuCategory .dep2 {
+}
+
+html body .prdListWrap .sideMenu .menuCategory .dep2_btn {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #aaa;
+}
+
+html body .prdListWrap .sideMenu .menuCategory .dep2_btn.active {
+  color: #333;
+}
+
+html body .prdListWrap .sideMenu .menuCategory .dep1.promotions .dep1_btn {
+  color: #dd0000;
+  font-weight: 700;
+}
+
+html body .prdListWrap .sideMenu .menuCategory .dep1.dropdown .dep1_btn:after {
+  display: block;
+  content: "+";
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin: -12px 0 0 0;
+}
+
+html
+  body
+  .prdListWrap
+  .sideMenu
+  .menuCategory
+  .dep1.dropdown.open
+  .dep1_btn:after {
+  content: "-";
+}
+
+html body .prdListWrap .sideMenu .menuCategory .dep1.dropdown.open .dep1_sub {
+  display: block;
+}
+
+html body .prdList {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto !important;
+}
+
+html body .prdList:not(.swiper-wrapper) .prdThumb {
+  display: block;
+  float: left;
+  width: calc(25% - 15px);
+  margin: 0 20px 0 0;
+}
+
+html body .prdList:not(.swiper-wrapper) .prdThumb:nth-of-type(4n + 4) {
+  margin: 0;
+}
+
+.prdList .thumbnail {
+  box-sizing: border-box;
+}
+
+.prdList .prdThumb .thumbnail .prdImg a img {
+  border: 0;
+}
+
+.prdList .prdThumb .thumbnail,
+.prdList .prdThumb .prdImg {
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.prdList .prdThumb .prdImg > a {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.prdList .prdThumb .prdImg > a img {
+  width: 100%;
+  max-height: 1000px !important;
+  z-index: 5;
+  position: relative;
+  background: #f7f7f7;
+}
+
+.prdList .prdThumb .prdImg > a .img {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+}
+
+.prdList .prdThumb .prdImg > a .img.on {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  opacity: 0;
+}
+
+.prdList .prdThumb:hover .prdImg > a .img.on {
+  opacity: 1;
+}
+
+.prdList .prdThumb .prdImg.soldout > a:before,
+.prdList .prdThumb .prdImg.soldout > a:after {
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+.prdList .prdThumb .prdImg.soldout > a:before {
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
+  top: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 8;
+}
+
+.prdList .prdThumb .prdImg.soldout > a:after {
+  content: "SOLD OUT";
+  width: 100%;
+  height: 26px;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #fff;
+  top: 50%;
+  left: 0;
+  margin: -13px 0 0 0;
+  z-index: 10;
+}
+
+.prdList .prdThumb .prdImg a .idx {
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  font-weight: bold;
+  background: #000;
+  border-radius: 0%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  padding: 8px 0;
+  box-sizing: border-box;
+  text-align: center;
+  display: none;
+}
+
+.prdList .prdThumb .prdImg a .idx:before {
+  display: block;
+  content: "";
+  font-size: 12px;
+}
+
+.prdList.bestList .prdThumb .prdImg a .idx {
+  display: block;
+}
+
+.prdList .prdThumb.collection .thumbnail {
+  width: 100%;
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 130%;
+  margin: 0 auto 20px;
+}
+
+.prdList .prdThumb.collection .thumbnail .prdImg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.prdList .prdThumb.collection .thumbnail .prdImg > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.prdList .prdThumb.collection .thumbnail .prdImg > a img {
+  display: block;
+  width: 100%;
+}

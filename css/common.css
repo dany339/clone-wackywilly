@@ -212,27 +212,6 @@ a:focus {
   text-decoration: none;
 }
 
-/* #container {
-  width: 1218px;
-  margin: 0 auto;
-  zoom: 1;
-}
-#container::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-#contents {
-  float: right;
-  width: 1014px;
-}
-#contents .inner {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-  */
-
 html body #wrap {
   width: 100%;
   max-width: 1200px;
@@ -563,4 +542,110 @@ body#main #wrap {
 :root {
   --swiper-navigation-size: 44px;
   --swiper-theme-color: #007aff;
+}
+
+.prdList .thumbnail {
+  box-sizing: border-box;
+}
+.prdList .thumbnail .prdImg a img {
+  border: 0;
+}
+.prdList .prdThumb .thumbnail,
+.prdList .prdThumb .prdImg {
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+.prdList .prdThumb .prdImg > a {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.prdList .prdThumb .prdImg > a img {
+  width: 100%;
+  max-height: 1000px !important;
+  z-index: 5;
+  position: relative;
+  background: #f7f7f7;
+}
+.prdList .prdThumb .prdImg > a .img {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+}
+.prdList .prdThumb .description {
+  width: 100%;
+  height: 130px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 10px 0 10px;
+  box-sizing: border-box;
+}
+.prdList .prdThumb .description .name,
+.prdList .prdThumb .description .name * {
+  display: block;
+  font-size: 16px !important;
+  line-height: 21px;
+  height: 21px;
+  overflow: hidden;
+  color: #000 !important;
+  font-weight: 400;
+  text-align: left;
+  font-family: "Noto Sans KR";
+}
+.prdList .prdThumb .description .priceInfo {
+  width: 100%;
+  display: flex;
+  text-align: left;
+  margin: 10px auto 0;
+  line-height: 17px;
+  gap: 7px;
+}
+.prdList .prdThumb .description .priceInfo .percent {
+  font-size: 18px;
+  color: #ff0101;
+}
+.prdList .prdThumb .description .priceInfo .percent::after {
+  content: "%";
+}
+.prdList .prdThumb .description .priceInfo .price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+.prdList .prdThumb .description .priceInfo .price::after {
+  content: "원";
+}
+.prdList .prdThumb .description .priceInfo .custom {
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+  margin: 0;
+}
+.prdList .prdThumb .description .priceInfo .custom::after {
+  content: "원";
+}
+.prdList .prdThumb .description .iconWrap {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 48px;
+  right: 5px;
+}
+.prdList .prdThumb .description .iconWrap .rect {
+  width: 30px;
+  height: 30px;
+  float: left;
+  position: relative;
+  margin: 0 10px 0 0;
+  padding: 2.5px;
+  box-sizing: border-box;
+  margin: 0;
+}
+.prdList .prdThumb .description .iconWrap .icon img {
+  width: 100%;
 }

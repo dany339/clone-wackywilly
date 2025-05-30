@@ -1,0 +1,221 @@
+@charset 'utf-8';
+.commDesignPage {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  margin: 80px auto 100px;
+}
+html body {
+  height: max-content;
+}
+html body #wrap {
+  max-width: 100%;
+  padding: 0;
+}
+html body .commDesignPage {
+  max-width: 100%;
+}
+html body .prdListWrap {
+  width: 100%;
+  max-width: 1820px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 10px 0 230px;
+  box-sizing: border-box;
+}
+html body .collection .prdListWrap {
+  padding: 0 10px;
+}
+html body .prdListWrap .sideMenu {
+  width: 200px;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  position: fixed;
+  top: 110px;
+  left: 48px;
+  background-color: #fff;
+}
+html body .prdListWrap .sideMenu .menuCategory {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html body .prdListWrap .sideMenu .menuCategory li,
+html body .prdListWrap .sideMenu .menuCategory ul,
+html body .prdListWrap .sideMenu .menuCategory a {
+  display: block;
+  float: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  position: relative;
+  box-sizing: border-box;
+}
+html body .prdListWrap .sideMenu .menuCategory .dep1 {
+  border-bottom: 1px solid #e0e0e0;
+}
+html body .prdListWrap .sideMenu .menuCategory .dep1_btn.active {
+  color: #000;
+}
+html body .prdListWrap .sideMenu .menuCategory .dep1_btn {
+  font-size: 13px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #111;
+}
+html body .prdListWrap .sideMenu .menuCategory .dep1.dropdown .dep1_btn::after {
+  content: "+";
+  display: block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin: -12px 0 0 0;
+}
+html
+  body
+  .prdListWrap
+  .sideMenu
+  .menuCategory
+  .dep1.dropdown.open
+  .dep1_btn::after {
+  content: "-";
+}
+html body .prdListWrap .sideMenu .menuCategory .dep1_sub {
+  display: none;
+  padding: 5px 0;
+}
+html body .prdListWrap .sideMenu .menuCategory .dep1.dropdown.open .dep1_sub {
+  display: block;
+}
+html body .prdListWrap .sideMenu .menuCategory .dep2_btn {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #aaa;
+}
+html body .prdListWrap .sideMenu .menuCategory .dep2_btn.active {
+  color: #333;
+}
+html body .prdListWrap .sideMenu .menuCategory .dep1.promotion .dep1_btn {
+  color: #d00;
+  font-weight: 700;
+}
+.xans-product-menupackage {
+  margin: 0 0 27px;
+}
+.xans-product-menupackage .title {
+  min-height: 30px;
+  margin: 10px 0 20px;
+}
+.xans-product-menupackage .title .banner {
+  margin: 0 0 20px;
+}
+.xans-product-menupackage .title .banner img {
+  max-width: 100%;
+  width: 100%;
+}
+.xans-product-menupackage .title h2 {
+  color: #4a5164;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.xans-product-normalmenu .function {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  line-height: 38px;
+}
+html body .prdListTop {
+  padding: 0;
+  margin: 0 auto 30px;
+  box-sizing: border-box;
+  border: 0;
+  position: relative;
+}
+html body .prdListTop .prdCount {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  padding: 0;
+}
+html body .prdListTop .sortList {
+  width: 90px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+html body .prdListTop .sortList select {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: 0;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+html body select {
+  appearance: none !important;
+  background: url(../images/cm_select_arrow_1.png) calc(100% - 10px) center
+    no-repeat;
+}
+.prdTitleArea h2,
+.prdTitleArea h2 span {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+html body .prdList {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto !important;
+}
+.ec-base-product .prdList {
+  width: 100%;
+  min-width: 756px;
+  margin: -20px 0 0;
+  font-size: 0;
+  line-height: 0;
+}
+html body .prdList:not(.swiper-wrapper) .prdThumb {
+  display: block;
+  float: left;
+  width: calc(25% - 15px);
+  margin: 0 20px 0 0;
+}
+html body .prdList:not(.swiper-wrapper) .prdThumb:nth-of-type(4n + 4) {
+  margin: 0;
+}
+
+.ec-base-product .prdList .chk {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: 0 0 10px;
+}

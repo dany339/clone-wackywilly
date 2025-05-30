@@ -57,3 +57,20 @@ function toggleSideDep1(event) {
     thisRect.classList.remove("open");
   }
 }
+
+function toggleSideDep1(event) {
+  var thisBtn = event.target;
+  var thisRect = thisBtn.closest(".dep1.dropdown");
+  var rectCtn = document.querySelectorAll(
+    "#prdSlideMenu .dep1.dropdown"
+  ).length;
+  for (var i = 0; i < rectCtn; i++) {
+    var rect = document.querySelectorAll("#prdSideMenu .dep1.dropdown")[i];
+    if ((rect = thisRect)) rect.classList.remove("open");
+  }
+  if (thisRect.className.indexOf("open") == -1) {
+    thisRect.classList.add("open");
+  } else {
+    thisRect.classList.remove("open");
+  }
+}
