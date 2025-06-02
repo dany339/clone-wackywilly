@@ -1,7 +1,12 @@
 @charset 'utf-8';
-
+html body #wrap {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1830px;
+  padding: 60px 10px 0px 10px;
+}
 .store-navi {
-  padding: 0.75rem 0;
+  padding: 1.3rem 0px;
   width: 100%;
   position: sticky;
   position: -webkit-sticky;
@@ -25,6 +30,7 @@
   transform: translate(0, -50%);
   font-size: 13px;
   font-weight: 500;
+  line-height: 1;
 }
 .breadcrumb .icon {
   width: 1rem;

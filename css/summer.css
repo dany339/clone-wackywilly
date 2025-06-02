@@ -1,4 +1,9 @@
 @charset 'utf-8';
+.xans-project-list {
+  max-width: 1780px;
+  margin: 0 auto;
+  padding: 4rem 0 8rem 0;
+}
 
 .ed-contents-wrap {
   max-width: 900px;

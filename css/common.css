@@ -212,14 +212,6 @@ a:focus {
   text-decoration: none;
 }
 
-html body #wrap {
-  width: 100%;
-  max-width: 1200px;
-  padding: 60px 20px 20px 20px;
-  box-sizing: border-box;
-  margin: 0 auto -100px;
-  position: relative;
-}
 html body #wrap #container {
   width: 100%;
   max-width: 100%;
@@ -233,11 +225,6 @@ html body #wrap #container #contents {
   min-height: 600px;
   margin: 0 auto;
   position: relative;
-}
-body#main #wrap {
-  max-width: 100%;
-  padding: 0;
-  margin: 0 auto;
 }
 
 /* header */
@@ -303,6 +290,17 @@ body#main #wrap {
   position: relative;
   margin: 0;
   padding: 0;
+}
+.headerWrap .categoryWrap {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 0;
+  z-index: 150;
+  border-top: 1px solid #f5f5f5;
 }
 .headerWrap .header .gnbWrap {
   position: absolute;
